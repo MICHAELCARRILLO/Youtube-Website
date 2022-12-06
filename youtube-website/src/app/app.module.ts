@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './public/home/home.component';
 import { ResourcesComponent } from './public/resources/resources.component';
 import { AboutComponent } from './public/about/about.component';
+import { ContactComponent } from './public/contact/contact.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AboutComponent } from './public/about/about.component';
     AppComponent,
     HomeComponent,
     ResourcesComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
