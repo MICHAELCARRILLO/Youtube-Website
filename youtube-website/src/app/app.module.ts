@@ -10,12 +10,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './public/home/home.component';
+import { ResourcesComponent } from './public/resources/resources.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
