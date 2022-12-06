@@ -11,13 +11,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './public/home/home.component';
 import { ResourcesComponent } from './public/resources/resources.component';
+import { AboutComponent } from './public/about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
