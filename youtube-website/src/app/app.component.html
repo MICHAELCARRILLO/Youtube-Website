@@ -1,12 +1,37 @@
-  <mat-toolbar color="primary" class="transparent">
-    <button mat-icon-button class="example-icon">
-      <img src="assets/img/icon.png" alt="icon" style="width: 215px; height: 60px; margin-left: 30px;">
-    </button>
-    <span class="example-spacer"></span>
-    <button mat-button color="accent" routerLink="/">Home</button>
+ 
+   <div style="height: 100vh; overflow:hidden; "> 
+    <mat-toolbar color="primary" class="transparent" >
+      <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+  
+      <a mat-button routerLink="/">
+        <img src="assets/img/icon.png" alt="icon" style="width: 215px; height: 60px; margin-left: 30px;">
+      </a>
+      <span class="example-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true" class="custom-button-text">
+        <button mat-button color="accent" routerLink="/">Home</button>
     <button mat-button color="accent" routerLink="/resources">Resources</button>
     <button mat-button color="accent" routerLink="/about">About</button>
-    <button mat-button color="accent" routerLink="/contact">Contact</button>    
-  </mat-toolbar>
-  <router-outlet></router-outlet>
+    <button mat-button color="accent" routerLink="/contact">Contact</button>  
+      </div>
   
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill class="example-container">
+  
+      <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+        <div fxLayout="column">
+          <button mat-button color="accent" routerLink="/">Home</button>
+    <button mat-button color="accent" routerLink="/resources">Resources</button>
+    <button mat-button color="accent" routerLink="/about">About</button>
+    <button mat-button color="accent" routerLink="/contact">Contact</button>  
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+  
+    </mat-sidenav-container>
+  </div>

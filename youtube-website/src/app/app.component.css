@@ -1,7 +1,50 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
+  .example-spacer {
+      flex: 1 1 auto;
+    }
 
   .transparent{
     background-color: transparent;
+    padding-top: 0.1rem;
   }
+
+  .example-container{
+    background: linear-gradient(115deg, #000920, #1E003C, #09002D);
+  }
+   
+  div {
+      overflow: inherit;
+  }
+
+  a{
+      text-decoration: none;
+      font-size: 110%;
+      white-space: normal;
+  }
+
+  button{
+      font-size: 110%;
+      min-width: min-content;
+  }
+
+ .example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-sidenav-content{
+      font-size: 200%;
+      text-align: center;
+  }
+
+  .custom-button-text{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 7rem;
+    padding-top: 0.1rem;
+  
+  }
+
+ 
